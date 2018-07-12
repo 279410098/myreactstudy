@@ -1,0 +1,39 @@
+.homepage {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.homepage .top{
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0px;
+    z-index: 5;
+}
+
+.homepage .app{
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 32px;
+    z-index: 5;
+}
+
+.homepage .topnav{
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 182px;
+    z-index: 5;
+}
+
+.homepage .left{
+    width: 200px;
+    height: 100%;
+    padding-top: 224px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 4;
+}

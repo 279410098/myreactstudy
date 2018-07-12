@@ -1,0 +1,27 @@
+.Left{
+    width: 100%;
+    height: 100%;
+    background: #f8f8f8;
+}
+
+.Left ul{
+    padding: 10px 0px;
+}
+
+.Left ul li{
+    padding: 6px 10px;
+    border-bottom: 1px solid #f4f4f4;
+}
+
+.Left ul li:last-child{
+    border:none;
+}
+
+.Left ul li.cur{
+    background: white;
+}
+
+.Left ul li:hover{
+    background: #f4f4f4;
+    cursor: pointer;
+}
