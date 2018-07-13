@@ -91,5 +91,4 @@ const commonMethods = {
     }
 };
 
-// 789
 export default commonMethods;
