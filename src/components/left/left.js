@@ -66,11 +66,6 @@ export default class Left extends React.Component{
                     name: "tree",
                     cur: false,
                     hreflink: "/"
-                },
-                {
-                    name: "ajax & fetch & axios",
-                    cur: false,
-                    hreflink: "/"
                 }
             ]
         };
