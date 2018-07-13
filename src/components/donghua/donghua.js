@@ -1,4 +1,4 @@
-import React from "C:/Users/任浩/AppData/Local/Microsoft/TypeScript/2.9/node_modules/@types/react";
+import React from "react";
 import "./donghua.css";
 // 测试jquery是否能够正常的引用和使用
 import $ from "jquery"
@@ -34,21 +34,23 @@ export default class Donghua extends React.Component {
 
     showVal () {
         alert('请查看控制台打印， 检测$是否被引入并正确的使用' + this.state.iptval);
-        console.log($("#idtest").prev().val());
+        console.log($("#idtest").next().val());
     };
 
     render () {
         return (
-            <div className="container-fluid mb50">
+            <div className="Donghua container-fluid mb50">
                 <div className=" row">
-                    <div className=" col-md-12">
-                        <div className={" input-group pull-right " + this.state.status}>
-                            <input type="text" className=" form-control" value={this.state.iptval} onChange={this.getChange.bind(this)} onFocus={this.getLarge.bind(this)} onBlur={this.getNormal.bind(this)} />
+                    <div className=" col-md-8">
+                        <h4 className="mt15 mb15">点击输入框， 查看简单动画效果</h4>
+                        <div className={" input-group " + this.state.status}>
                             <div className=" input-group-addon" id="idtest" onClick={this.showVal.bind(this)}>
                                 <span className=" glyphicon glyphicon-search"></span>
                             </div>
+                            <input type="text" className=" form-control" value={this.state.iptval} onChange={this.getChange.bind(this)} onFocus={this.getLarge.bind(this)} onBlur={this.getNormal.bind(this)} />
                         </div>
                     </div>
+                    <div className="col-md-4"></div>
                 </div>
             </div>
         )

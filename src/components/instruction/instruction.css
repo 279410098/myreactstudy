@@ -1,5 +1,26 @@
-.mychartbox{
+.Istruction{
     width: 100%;
     overflow: hidden;
     padding: 6px 15px;
+}
+
+.Istruction ul {
+    width: 100%;
+    overflow: hidden;
+    list-style: none;
+    padding: 0px;
+}
+
+.Istruction ul li{
+    width: 100%;
+    padding: 8px;
+    border-bottom: 1px solid #f7f7f7;
+}
+
+.Istruction ul li:last-child{
+    border: none;
+}
+
+.Istruction ul li:hover{
+    background: #f4f4f4;
 }

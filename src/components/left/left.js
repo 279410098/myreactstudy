@@ -1,69 +1,69 @@
+// 引入依赖
 import React from "react";
+import { Scrollbars } from 'react-custom-scrollbars';
+
+// 引入样式表和图片
 import "./left.css";
 import arrowleft from "./arrowleft.png";
 
+// 定义类组建并暴露出去
 export default class Left extends React.Component{
     constructor (props) {
         super (props);
         this.state = {
             leftList: [
                 {
-                    name: "1，说明",
+                    name: "说明",
                     cur: true,
                     hreflink: "/"
                 },
                 {
-                    name: "2，bootstrap",
+                    name: "bootstrap",
                     cur: false,
                     hreflink: "/"
                 },
                 {
-                    name: "3，ECHARTS图表",
+                    name: "ECHARTS图表",
                     cur: false,
                     hreflink: "/"
                 },
                 {
-                    name: "4，动画示例",
+                    name: "动画示例",
                     cur: false,
                     hreflink: "/"
                 },
                 {
-                    name: "5，grid表单",
+                    name: "grid表单",
                     cur: false,
                     hreflink: "/"
                 },
                 {
-                    name: "6，地图",
+                    name: "地图",
                     cur: false,
                     hreflink: "/"
                 },
                 {
-                    name: "7，drag",
+                    name: "drag",
                     cur: false,
                     hreflink: "/"
                 },
                 {
-                    name: "8，touch",
+                    name: "touch",
                     cur: false,
                     hreflink: "/"
                 },
                 {
-                    name: "9，美化滚动条",
+                    name: "modal",
                     cur: false,
                     hreflink: "/"
                 },
                 {
-                    name: "10，modal",
+                    name: "loading",
                     cur: false,
                     hreflink: "/"
                 },
                 {
-                    name: "11，loading",
-                    cur: false,
-                    hreflink: "/"
-                },
-                {
-                    name: "12，tree",
+                    name: "tree",
                     cur: false,
                     hreflink: "/"
                 }
@@ -71,6 +71,7 @@ export default class Left extends React.Component{
         };
     };
 
+    // 变更当前导航item
     changeItem(_index){
         this.setState (function (prevState, props) {
             let newList = [];
@@ -93,23 +94,25 @@ export default class Left extends React.Component{
         const listItems = this.state.leftList.map((listItem, index) => {
             if (listItem.cur === true) {
                 return <li className="cur" key={index} onClick={this.changeItem.bind(this, index)}>
-                            {listItem.name}
+                            {index + 1}，{listItem.name}
                             <img className="pull-right mt2" src={arrowleft} alt=""/>
                         </li>
             } else {
                 return <li key={index} onClick={this.changeItem.bind(this, index)}>
-                            {listItem.name}
+                            {index + 1}，{listItem.name}
                             <img className="pull-right mt2 dp-none" src={arrowleft} alt=""/>
                         </li>
             }
         });
 
         return (
-            <div className="Left">
-                <ul className="list-unstyled">
-                    {listItems}
-                </ul>
-            </div>
+            <Scrollbars className="Left" autoHide autoHideTimeout={1000} autoHideDuration={200}>
+                <div className="Left">
+                    <ul className="list-unstyled">
+                        {listItems}
+                    </ul>
+                </div>
+            </Scrollbars>
         )
     };
 }

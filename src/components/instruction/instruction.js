@@ -1,12 +1,13 @@
-import React from "C:/Users/任浩/AppData/Local/Microsoft/TypeScript/2.9/node_modules/@types/react";
+// 引入依赖
+import React from "react";
 import "./instruction.css"
 
 export default class Istruction extends React.Component{
     render () {
         return (
-            <div className="instruction">
+            <div className="Istruction">
                 <h4>此DEMO主要目的在于：</h4>
-                <ul className="list-unstyled">
+                <ul>
                     <li>1, 整理收集REACT可用的公用方法， 详见于utils.js文件</li>
                     <li>2, 创建公共样式表，整理收集常见可用的UI组件</li>
                     <li>3, 归纳项目开发中经常需要用到的组建，例如： grid， echarts， map， niceScroll， touch，drag， 栅格系统， 等等 </li>

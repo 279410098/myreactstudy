@@ -1,4 +1,4 @@
-import React from 'C:/Users/任浩/AppData/Local/Microsoft/TypeScript/2.9/node_modules/@types/react';
+import React from 'react';
 
 
 export default class Bt extends React.Component{
@@ -26,7 +26,7 @@ export default class Bt extends React.Component{
     render () {
         return (
             <div className="container-fluid">
-                <h4>直接引入bt.css, 可以使用bt样式表， 对于设计到dom部分的bt， 不可使用。（react提倡少用dom直接操作）</h4>
+                <h4 className="mt30 mb30">直接引入bt.css, 可以使用bt样式表， 对于设计到dom部分的bt， 不可使用。（react提倡少用dom直接操作）</h4>
                 <div className="row">
                     <div className="col-md-6">
                         <div className="panel panel-primary">

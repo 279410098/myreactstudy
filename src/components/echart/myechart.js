@@ -1,8 +1,8 @@
-import React from "C:/Users/任浩/AppData/Local/Microsoft/TypeScript/2.9/node_modules/@types/react";
+import React from "react";
 import echarts from "echarts";
 import './myechart.css';
 
-export default class MyEchartComponent extends React.Component{
+export default class MyEchart extends React.Component{
     componentDidMount () {
         // 基于准备好的dom，初始化echarts
         let mychart = echarts.init(document.getElementById('showEchart'));
@@ -351,7 +351,7 @@ export default class MyEchartComponent extends React.Component{
     };
     render () {
         return (
-            <div className="container-fluid mb50 mt50">
+            <div className="MyEchart container-fluid mb50 mt50">
                 <div className="row">
                     <div className="col-md-12">
                         <div className="mychartbox" id="showEchart"></div>
