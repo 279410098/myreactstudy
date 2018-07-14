@@ -14,6 +14,9 @@ import Bt from './../bt/bt';
 import MyEchart from "./../echart/myechart";
 import Donghua from "./../donghua/donghua";
 import Error from "./../Error/Error";
+import OtherComponent from './../other/other';
+import Modal from './../modal/modal';
+import Alertshowplace from './../alertshowplace/alertshowplace'
 
 // 引入样式表
 import "./right.css";
@@ -29,6 +32,10 @@ export default class Right extends React.Component{
                         <Route exact path="/bt" component={Bt}/>
                         <Route exact path="/mychart" component={MyEchart}/>
                         <Route exact path="/donghua" component={Donghua}/>
+                        <Route exact path="/other" component={OtherComponent}/>
+                        <Route exact path="/modal" component={Modal}/>
+                        <Route exact path="/alert" component={Alertshowplace}/>
+
                         <Route path="/error" component={Error}/>
                         <Route path="*" render={() => <Redirect to='/error'/>}/>
                     </Switch>
