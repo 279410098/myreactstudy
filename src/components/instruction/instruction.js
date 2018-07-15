@@ -12,7 +12,6 @@ export default class Istruction extends React.Component{
                     <li>2, 创建公共样式表，整理收集常见可用的UI组件</li>
                     <li>3, 归纳项目开发中经常需要用到的组建，例如： grid， echarts， map， niceScroll， touch，drag， 栅格系统， 等等 </li>
                     <li>4, 将React从入门到熟练，进阶到精通，并对webpack， *-cli， nodejs， npm， git等等前端涉及到的知识点有一个全面的了解和认知</li>
-                    <li>5, HERE IS SOMETHING DEFFRENT FROM MASTER</li>
                 </ul>
             </div>
         )
